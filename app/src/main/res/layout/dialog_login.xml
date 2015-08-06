@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/login_dialog_background"
+    android:orientation="vertical"
+    android:paddingBottom="30dp"
+    android:paddingLeft="60dp"
+    android:paddingRight="60dp"
+    android:paddingTop="60dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:text="Login"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:singleLine="true"
+        android:id="@+id/login_id_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/login_dialog_edittext_background"
+        android:drawableLeft="@drawable/login_dialog_id"
+        android:hint="ID"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:id="@+id/login_password_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/login_dialog_password"
+        android:background="@drawable/login_dialog_edittext_background"
+        android:hint="Password"
+        android:paddingLeft="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/login_ok_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_dialog_login_btn" />
+
+        <TextView
+            android:id="@+id/login_cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/login_dialog_cancel_btn" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/login_signup_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:textColor="#3a8980"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="|"
+            android:textColor="#3a8980"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/login_find_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID-PW 찾기"
+            android:textColor="#3a8980"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
